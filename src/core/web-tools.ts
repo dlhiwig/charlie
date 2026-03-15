@@ -1,5 +1,5 @@
 /**
- * Web Tools Integration for Bravo
+ * Web Tools Integration for Charlie
  * Provides web search and information retrieval capabilities
  */
 

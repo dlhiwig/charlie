@@ -1,5 +1,5 @@
 /**
- * Brave Search API Integration for Bravo
+ * Brave Search API Integration for Charlie
  * Provides web search capabilities with region and language support
  */
 

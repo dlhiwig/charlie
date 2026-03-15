@@ -47,7 +47,7 @@ function getSession(chatId: string): Session {
 export async function startTelegram(config: CharlieConfig) {
   const token = config.telegram.botToken;
   if (!token || token === "NEEDS_BOT_TOKEN") {
-    log.warn("Telegram botToken is not configured — skipping Telegram channel. Set a valid token in bravo.json.");
+    log.warn("Telegram botToken is not configured — skipping Telegram channel. Set a valid token in charlie.json.");
     return null;
   }
 
@@ -193,7 +193,7 @@ export async function startTelegram(config: CharlieConfig) {
   // Handle /start command
   bot.command("start", async (ctx) => {
     await ctx.reply(
-      "🏗️ *Bravo Gateway — Online*\n\n" +
+      "🚀 *Charlie Runtime — Online*\n\n" +
       "Independent SuperClaw runtime. Zero OpenClaw dependency.\n" +
       "Custom Fastify gateway + direct grammY integration.\n\n" +
       "Status: Early testing. Talk to me.",
@@ -208,8 +208,8 @@ export async function startTelegram(config: CharlieConfig) {
     const memMB = Math.floor(process.memoryUsage.rss() / 1024 / 1024);
 
     await ctx.reply(
-      `📊 *Bravo Status*\n\n` +
-      `Runtime: Bravo v0.1.0\n` +
+      `📊 *Charlie Status*\n\n` +
+      `Runtime: Charlie v1.0.0\n` +
       `Uptime: ${uptime}s\n` +
       `Memory: ${memMB} MB\n` +
       `Sessions: ${sessionCount}\n` +

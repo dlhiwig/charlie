@@ -1,8 +1,8 @@
 /**
- * PinchTab Client for Bravo
+ * PinchTab Client for Charlie
  * 
  * HTTP client for PinchTab browser automation server.
- * Gives Bravo browser capabilities via shared PinchTab instance on :9867.
+ * Gives Charlie browser capabilities via shared PinchTab instance on :9867.
  * 
  * Token-efficient: ~800 tokens/page vs ~10K for screenshots (93% savings)
  */
@@ -17,7 +17,7 @@ interface PinchTabConfig {
 const DEFAULT_CONFIG: PinchTabConfig = {
   baseUrl: 'http://localhost:9867',
   token: process.env.PINCHTAB_TOKEN || 'pinchtab-local-key',
-  profile: 'bravo',
+  profile: 'charlie',
   timeout: 30000,
 };
 

@@ -1,5 +1,5 @@
 /**
- * Bravo LLM Provider Abstraction
+ * Charlie LLM Provider Abstraction
  *
  * Unified interface to talk to any LLM provider.
  * Uses the OpenAI SDK as the universal adapter (most providers are compatible).

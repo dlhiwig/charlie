@@ -1,5 +1,5 @@
 /**
- * Bravo Logger
+ * Charlie Logger
  *
  * Shim #1 of 8: Replaces OpenClaw's createSubsystemLogger.
  * Uses pino for structured, fast logging.

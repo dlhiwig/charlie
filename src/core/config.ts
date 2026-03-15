@@ -27,7 +27,7 @@ const CharlieConfigSchema = z.object({
   gateway: z.object({
     port: z.number().default(18795),
     bind: z.string().default("127.0.0.1"),
-    authToken: z.string().default("bravo-local-key"),
+    authToken: z.string().default("charlie-local-key"),
   }),
   telegram: z.object({
     botToken: z.string(),
