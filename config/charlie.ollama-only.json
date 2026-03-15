@@ -1,0 +1,28 @@
+{
+  "gateway": {
+    "port": 18797,
+    "bind": "127.0.0.1",
+    "authToken": "CHANGE-ME-to-a-random-secret"
+  },
+  "telegram": {
+    "botToken": "PASTE-YOUR-BOT-TOKEN-FROM-BOTFATHER",
+    "allowFrom": []
+  },
+  "models": {
+    "primary": "ollama/qwen3.5:latest",
+    "fallbacks": [],
+    "providers": {
+      "ollama": {
+        "baseUrl": "http://127.0.0.1:11434/v1",
+        "apiKey": "ollama",
+        "models": [
+          { "id": "qwen3.5:latest", "name": "Qwen 3.5", "contextWindow": 32768 }
+        ]
+      }
+    }
+  },
+  "ollama": {
+    "endpoint": "http://127.0.0.1:11434"
+  },
+  "stateDir": "~/.bravo"
+}

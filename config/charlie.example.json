@@ -1,0 +1,49 @@
+{
+  "gateway": {
+    "port": 18798,
+    "bind": "127.0.0.1",
+    "authToken": "charlie-secure-token-2026"
+  },
+  "telegram": {
+    "botToken": "PASTE-YOUR-BOT-TOKEN-FROM-BOTFATHER",
+    "allowFrom": []
+  },
+  "models": {
+    "primary": "ollama/qwen3.5:latest",
+    "fallbacks": [],
+    "providers": {
+      "ollama": {
+        "baseUrl": "http://127.0.0.1:11434/v1",
+        "apiKey": "ollama",
+        "models": [
+          { "id": "qwen3.5:latest", "name": "Qwen 3.5", "contextWindow": 32768 }
+        ]
+      },
+      "openai": {
+        "baseUrl": "https://api.openai.com/v1",
+        "apiKey": "YOUR-OPENAI-API-KEY",
+        "models": [
+          { "id": "gpt-4.1", "name": "GPT-4.1", "contextWindow": 128000, "maxTokens": 4096 }
+        ]
+      },
+      "xai": {
+        "baseUrl": "https://api.x.ai/v1",
+        "apiKey": "YOUR-XAI-API-KEY",
+        "models": [
+          { "id": "grok-3-mini-fast", "name": "Grok 3 Mini", "contextWindow": 131072, "maxTokens": 4096 }
+        ]
+      },
+      "perplexity": {
+        "baseUrl": "https://api.perplexity.ai",
+        "apiKey": "YOUR-PERPLEXITY-API-KEY",
+        "models": [
+          { "id": "sonar-pro", "name": "Sonar Pro", "contextWindow": 200000, "maxTokens": 4096 }
+        ]
+      }
+    }
+  },
+  "ollama": {
+    "endpoint": "http://127.0.0.1:11434"
+  },
+  "stateDir": "~/.charlie"
+}
