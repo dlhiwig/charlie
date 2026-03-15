@@ -1,7 +1,7 @@
 /**
  * Charlie Logger
  *
- * Shim #1 of 8: Replaces OpenClaw's createSubsystemLogger.
+ * Shim #1 of 8: Lightweight subsystem logger.
  * Uses pino for structured, fast logging.
  */
 
@@ -15,7 +15,7 @@ const rootLogger = pino({
 });
 
 /**
- * Create a subsystem logger — drop-in replacement for OpenClaw's createSubsystemLogger
+ * Create a subsystem logger with structured output
  */
 export function createSubsystemLogger(subsystem: string) {
   return rootLogger.child({ subsystem });

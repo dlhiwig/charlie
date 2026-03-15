@@ -194,8 +194,8 @@ export async function startTelegram(config: CharlieConfig) {
   bot.command("start", async (ctx) => {
     await ctx.reply(
       "🚀 *Charlie Runtime — Online*\n\n" +
-      "Independent SuperClaw runtime. Zero OpenClaw dependency.\n" +
-      "Custom Fastify gateway + direct grammY integration.\n\n" +
+      "Independent AI runtime. Zero external platform dependency.\n" +
+      "Fastify gateway + grammY Telegram integration.\n\n" +
       "Status: Early testing. Talk to me.",
       { parse_mode: "Markdown" },
     );
